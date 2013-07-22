@@ -1,0 +1,25 @@
+{
+  "name": "find-hashtags",
+  "version": "0.1.0",
+  "description": "Extracts the hashtags from a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/tape/bin/tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/connrs/node-find-hashtags"
+  },
+  "keywords": [
+    "hashtags",
+    "tags"
+  ],
+  "author": "connrs",
+  "license": "BSD-3",
+  "devDependencies": {
+    "tape": "~1.0.4"
+  },
+  "dependencies": {
+    "xregexp": "~2.0.0"
+  }
+}
