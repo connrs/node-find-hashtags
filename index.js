@@ -62,7 +62,7 @@ FindHashtags.prototype._incrementNextMatchPosition = function () {
 };
 
 FindHashtags.prototype._getMatches = function () {
-  return this._matches.length === 0 ? null : this._matches;
+  return this._matches.length === 0 ? [] : this._matches; //We need to blank array here because yield does not accept null value
 };
 
 function findHashtags(content) {
