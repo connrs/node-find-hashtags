@@ -4,7 +4,7 @@ var hashtags = require('../');
 test('no hashtags found', function (t) {
   var content = 'no hashtags in here';
 
-  t.equal(hashtags(content), []);
+  t.deepEqual(hashtags(content), []);
   t.end();
 });
 
