@@ -49,3 +49,17 @@ test('hashtags are converted to lowercase', function (t) {
   t.deepEqual(hashtags(content), ['hashtags', 'lowercase']);
   t.end();
 });
+
+test('hashtag with no space after preceding word', function (t) {
+  var content = 'Example content like#This should correctly handle hashtags.';
+
+  t.deepEqual(hashtags(content), ['this']);
+  t.end();
+});
+
+test('two hashtags with no space between', function (t) {
+  var content = 'Example content#like#This should correctly handle hashtags.';
+
+  t.deepEqual(hashtags(content), ['like', 'this']);
+  t.end();
+})

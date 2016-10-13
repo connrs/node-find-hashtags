@@ -1,5 +1,5 @@
 var XRegExp = require('xregexp').XRegExp;
-var hashtagExp = XRegExp('\\S*#[\\p{L}\\d]+', 'i');
+var hashtagExp = XRegExp('#[\\p{L}\\d]+', 'i');
 
 function FindHashtags() {
   this._nextMatchPosition = 0;
