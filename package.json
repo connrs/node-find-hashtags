@@ -1,6 +1,6 @@
 {
   "name": "find-hashtags",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extracts the hashtags from a string",
   "main": "index.js",
   "scripts": {
