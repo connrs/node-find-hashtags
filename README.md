@@ -6,9 +6,11 @@ Get an array of hashtags extracted from a string.
 
 ## Usage
 
-    var findHashtags = require('find-hashtags');
+    var findTags = require('find-hashtags');
     
-    console.log(findHashtags('This #text contains a number of #useful hashtags'));
+    console.log(findTags.hashtag('This #text contains a number of #useful hashtags'));
     // ['text', 'useful']
+     console.log(findTags.attag('This @text contains a number of @useful ats'));
+        // ['text', 'useful']
 
-The function returns an array containing the hashtags found within a string. It only matches letters and numbers as components of a hashtag.
+The function returns an array containing the hashtags or ats found within a string. It only matches letters and numbers as components of a hashtag.
