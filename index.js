@@ -144,6 +144,6 @@ function findAt(content) {
 }
 
 module.exports = {
-  findHashtags:findHashtags,
-  findAt:findAt
+  hashtag:findHashtags,
+  attag:findAt
 };
