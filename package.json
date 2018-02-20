@@ -20,6 +20,6 @@
     "tape": "~1.0.4"
   },
   "dependencies": {
-    "xregexp": "~2.0.0"
+    "xregexp": "~4.0.0"
   }
 }
